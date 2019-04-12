@@ -1,5 +1,12 @@
 package independentPathsTest;
 
+/*                                                               
+* This is a class that has a method
+* which takes a number and checks
+* if the number is a primer number
+* 
+*
+*/
 public class PrimeNumberTester {
 	public String primeNumberChecker(int number) {
 		if (number >= 2) {

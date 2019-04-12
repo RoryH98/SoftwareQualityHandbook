@@ -1,9 +1,16 @@
 package errorHandlingPaths;
 
+/*                                                               
+* This is a class which has a method 
+* which takes a string of numbers
+* splits the numbers and adds them together
+*
+*/
+
 public class StringCalculator {
 
 	public int add(String numbers) {
-		int answer = 0;
+		int answer_L = 0;
 		try {
 			if (numbers.equals("")) {
 				return 0;
@@ -14,14 +21,14 @@ public class StringCalculator {
 				if (Integer.parseInt(parts[i]) < 0) {
 					throw new IllegalArgumentException("Only Positive Numbers " + Integer.parseInt(parts[i]));
 				} else {
-					answer = answer + Integer.parseInt(parts[i]);
+					answer_L = answer_L + Integer.parseInt(parts[i]);
 				}
 			}
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException("Only Positive Numbers");
 		}
 
-		return answer;
+		return answer_L;
 
 	}
 }
